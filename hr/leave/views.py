@@ -17,4 +17,8 @@ def login(request):
     template = loader.get_template('leave/login.html')
     return HttpResponse(template.render(request))
 
+def validate_login(request):
+	return HttpResponse("Gets to view 2 to make sure")	
+
+
 
